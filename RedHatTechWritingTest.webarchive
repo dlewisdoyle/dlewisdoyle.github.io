@@ -1,0 +1,804 @@
+bplist00“_WebMainResource_WebSubresources’	
+_WebResourceFrameName_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURLPOg<!DOCTYPE html><html lang="en"><head>
+	<meta charset="utf-8">
+	<title>Daring Fireball: Markdown Web Dingus</title>
+	<style type="text/css">
+	/*
+		Basic layout courtesy of InkNoise's very nifty Layout-o-matic:
+		http://www.inknoise.com/experimental/layoutomatic.php
+	*/
+
+	#sidebar h1 {	
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	#sidebar h2 {	
+		font-size: 1.2em;
+		font-weight: bold;
+		margin-bottom: -.5em;
+	}
+	#sidebar h3 {	
+		font-size: 1em;
+		font-weight: bold;
+		text-transform: none;
+		margin-bottom: .25em;
+		margin-top: 1.5em;
+	}
+	#sidebar code {	
+		font-family: Consolas, "Source Code Pro", Menlo, "Andale Mono", "Lucida Console", Courier, monospace;
+		font-size: 12px;
+	}
+	#sidebar pre {	
+		line-height: 12px;
+		margin-top: 0;
+		background-color: #f5f5f5;
+		border: 1px solid #ccc;
+		padding: 4px;
+	}
+	#sidebar p {	
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	body {	
+		background-color: #eee;
+		font-family: "Lucida Grande", "Helvetica Neue", Verdana, sans-serif;
+		font-size: 11px;
+		line-height: 1.6em;
+	}
+	.renderbox {	
+		background: white;
+		font-family: Georgia, serif;
+		font-size: 13px;
+		border: 1px #888 solid;
+		padding: 0 5px;
+		width: 97%;
+	}
+	.label {
+		margin-bottom: 4px;
+	}
+
+	#container {	
+		border: 0px solid gray;
+		margin: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0px;
+		min-width: 750px;
+		
+		/* Serve up some shit for Win/IE: */
+		width:expression("800px" );
+		margin-left:expression("0");
+	}
+
+	#banner {
+		padding: 0;
+		margin-bottom: 5px;
+		background-color: transparent;
+	}
+
+	#app {	
+		padding: 0 10px 0 10px;
+		margin-right: 270px;
+		background-color: transparent;
+		border-right: 0px solid #bbb;
+	}
+
+	#sidebar {
+		float: right;
+		width: 250px;
+		margin: 0;
+		margin-right: 10px;
+		padding: 0;
+		background-color: transparent;
+	}
+
+	.footer {
+		margin-top: 50px;
+	}
+
+	#buttonrow {	
+		margin-top: 10px;
+		margin-bottom: 60px;
+	}
+	.actionbutton {
+		width: 7em;
+		margin-left:20px;
+	}
+
+	textarea[name="markdown"], textarea[name="xhtml"] {
+	/* WinIE is fucking stupid. Thanks to Sam Ruby for the workaround:
+		http://www.intertwingly.net/blog/1432.html */ 	
+		width: 98%;
+	}	
+	
+	#ProjectSubmenu {
+		list-style: none outside;
+		padding: 0;
+		margin: 2em 0 1em 0;
+		height: 4em; /* Setting a height makes it act like a block */
+		border: 0px dotted gray;
+	}
+	
+	#ProjectSubmenu li {
+		display: inline;
+		padding: 0;
+		margin: 0;
+	}
+	
+	
+	#ProjectSubmenu li a,
+	#ProjectSubmenu li a:link,
+	#ProjectSubmenu li a:visited {
+		text-decoration: none;
+		text-align: center;
+		float: left;
+		display: block;
+		min-width: 35px;
+		padding: 1px 3px 2px 3px;
+		margin: 0;
+		margin-right: -1px;
+		background: transparent;
+		color: black;
+		border-color: #999;
+		border-width: 1px;
+		border-style: solid;
+	}
+	
+	#ProjectSubmenu li a.selected,
+	#ProjectSubmenu li a.selected:hover {
+		background: #999;
+		color: white;
+	}
+	
+	#ProjectSubmenu li a:hover {
+		background-color: #ccc;
+	}
+	
+	#ProjectSubmenu li a:active {
+		color: #eee;
+		background: #bbb;
+	}
+	
+	</style>
+<script type="text/javascript" src="https://daringfireball.net/mint/?record&amp;key=3551716f3179665863617a537748374a4a34653578383334355231&amp;referer=https%3A//daringfireball.net/projects/markdown/dingus&amp;resource=https%3A//daringfireball.net/projects/markdown/dingus&amp;resource_title=Daring%20Fireball%3A%20Markdown%20Web%20Dingus&amp;resource_title_encoded=0&amp;window_width=1240&amp;window_height=646&amp;resolution=1280x800&amp;flash_version=0&amp;1543854716134&amp;serve_js"></script></head>
+<body>
+
+<div id="container">
+
+<!-- <div id="banner"> -->
+<!-- </div> -->
+
+<div id="sidebar">
+<h1>Markdown: Dingus</h1>
+
+<ul id="ProjectSubmenu">
+    <li><a href="/projects/markdown/" title="Markdown Project Page">Main</a></li>
+    <li><a href="/projects/markdown/basics" title="Markdown Basics">Basics</a></li>
+    <li><a href="/projects/markdown/syntax" title="Markdown Syntax Documentation">Syntax</a></li>
+    <li><a href="/projects/markdown/license" title="Pricing and License Information">License</a></li>
+    <li><a class="selected" title="Online Markdown Web Form">Dingus</a></li>
+</ul>
+
+<h2>Syntax Cheatsheet:</h2>
+
+<h3>Phrase Emphasis</h3>
+
+<pre><code>*italic*   **bold**
+_italic_   __bold__
+</code></pre>
+
+<h3>Links</h3>
+
+<p>Inline:</p>
+
+<pre><code>An [example](http://url.com/ "Title")
+</code></pre>
+
+<p>Reference-style labels (titles are optional):</p>
+
+<pre><code>An [example][id]. Then, anywhere
+else in the doc, define the link:
+
+  [id]: http://example.com/  "Title"
+</code></pre>
+
+<h3>Images</h3>
+
+<p>Inline (titles are optional):</p>
+
+<pre><code>![alt text](/path/img.jpg "Title")
+</code></pre>
+
+<p>Reference-style:</p>
+
+<pre><code>![alt text][id]
+
+[id]: /url/to/img.jpg "Title"
+</code></pre>
+
+<h3>Headers</h3>
+
+<p>Setext-style:</p>
+
+<pre><code>Header 1
+========
+
+Header 2
+--------
+</code></pre>
+
+<p>atx-style (closing #'s are optional):</p>
+
+<pre><code># Header 1 #
+
+## Header 2 ##
+
+###### Header 6
+</code></pre>
+
+<h3>Lists</h3>
+
+<p>Ordered, without paragraphs:</p>
+
+<pre><code>1.  Foo
+2.  Bar
+</code></pre>
+
+<p>Unordered, with paragraphs:</p>
+
+<pre><code>*   A list item.
+
+    With multiple paragraphs.
+
+*   Bar
+</code></pre>
+
+<p>You can nest them:</p>
+
+<pre><code>*   Abacus
+    * answer
+*   Bubbles
+    1.  bunk
+    2.  bupkis
+        * BELITTLER
+    3. burper
+*   Cunning
+</code></pre>
+
+<h3>Blockquotes</h3>
+
+<pre><code>&gt; Email-style angle brackets
+&gt; are used for blockquotes.
+
+&gt; &gt; And, they can be nested.
+
+&gt; #### Headers in blockquotes
+&gt; 
+&gt; * You can quote a list.
+&gt; * Etc.
+</code></pre>
+
+<h3>Code Spans</h3>
+
+<pre><code>`&lt;code&gt;` spans are delimited
+by backticks.
+
+You can include literal backticks
+like `` `this` ``.
+</code></pre>
+
+<h3>Preformatted Code Blocks</h3>
+
+<p>Indent every line of a code block by at least 4 spaces or 1 tab.</p>
+
+<pre><code>This is a normal paragraph.
+
+    This is a preformatted
+    code block.
+</code></pre>
+
+<h3>Horizontal Rules</h3>
+
+<p>Three or more dashes or asterisks:</p>
+
+<pre><code>---
+
+* * *
+
+- - - - 
+</code></pre>
+
+<h3>Manual Line Breaks</h3>
+
+<p>End a line with two or more spaces:</p>
+
+<pre><code>Roses are red,   
+Violets are blue.
+</code></pre>
+</div> <!-- sidebar -->
+
+<div id="app">
+	<form action="" method="post">
+<div>
+<p class="label">Markdown Source:</p>
+<textarea rows="25" cols="80" style="font-family: Consolas, Menlo, 'Source Code Pro', 'Andale Mono', monospace; font-size: 12px;" name="markdown">---
+---
+
+
+Quickstart: Installing ownCloud and Connecting to It as a Client
+=================================================================
+This Quickstart Guide describes the basic administration tasks for installing and using ownCloud, the open source file synchronization and sharing solution for servers that you control. ownCloud includes the ownCloud server, which runs on Linux, client applications for Microsoft Windows, Mac OS X and Linux, and mobile clients for the Android and Apple iOS operating systems.  
+
+
+Installing and Configuring an ownCloud Server 
+---------------------------------------------
+
+1. Confirm that you meet the General Recommendations for System Requirements:   
+   * Operating system: Linux
+   * Web server: Apache 2.4
+   * Database: MySQL/MariaDB with InnoDB storage engine
+   * PHP 5.6+
+   * For the complete list of supported platforms and options, see [System Requirements](https://doc.owncloud.com/server/10.0/admin_manual/installation/system_requirements.html/"Title").
+
+2. Ensure you have Command Line *and* Cron Access. To perform all administrative tasks reliably, (such as repairs, upgrades, background jobs, and long-running operations), you will need both access types.
+   * For more information, see [Deployment Recommendations](https://doc.owncloud.com/server/10.0/admin_manual/installation/deployment_recommendations.html/"Title").
+
+3. Install ownCloud on Linux from our [Open Build Service packages](https://doc.owncloud.com/server/10.0/admin_manual/installation/linux_installation.html/"Title"). 
+   * If there are no packages for your Linux distribution or you prefer installing from the source tarball, see [Manual Linux Installation](https://doc.owncloud.com/server/10.0/admin_manual/installation/source_installation.html/"Title").
+
+4. Run the Installation Wizard:
+   * Point your web browser to http://localhost/owncloud.
+   * Enter your desired administrator‚Äôs username and password.
+   * Click ‚ÄúFinish Setup‚Äù.
+   * For more information, see [Installation Wizard](https://doc.owncloud.com/server/10.0/admin_manual/installation/installation_wizard.html/"Title").
+
+
+5. Follow guidelines in [Configuration Notes &amp; Tips](https://doc.owncloud.com/server/10.0/admin_manual/installation/configuration_notes_and_tips.html/"Title").
+   * ownCloud recommends the use of **PHP 7.2** in new installations. Sites using a version earlier than PHP 7.2 are strongly encouraged to migrate to PHP 7.2.
+
+
+Enabling Users to Connect to the ownCloud Server
+------------------------------------------------
+1. In your config.php file, under the trusted_domains setting, add the server IP address to which users can point their browsers.
+
+A typical configuration looks like this:
+       
+    'trusted_domains' =&gt; [
+       0 =&gt; 'localhost',
+       1 =&gt; 'server1.example.com',
+       2 =&gt; '192.168.1.50',
+    ],
+    
+2. In the Apache server, change the port to 8080.
+
+   * For details, see [How to change the port ownCloud is using](https://central.owncloud.org/t/how-to-change-the-port-owncloud-is-using/834.html/"Title").
+
+
+Creating a User Account
+-----------------------
+1. On the left sidebar of the User Management Page, click "users".
+2. Enter the new user‚Äôs Login Name, their initial Password, and their email address.
+3. Click "Create".
+
+*Note:* The local user creation flow now expects both a username **and** an email address. Users receive email notification with an activation link which provides a more efficient, secure experience. Administrators who want to set the initial password can select the ‚ÄúSet a password for new users‚Äù option on the bottom left settings cog.
+
+Connecting to the ownCloud Server from a Desktop or Mobile Client
+-----------------------------------------------------------------
+The ownCloud Desktop Sync Client enables you to connect to *your own* private ownCloud Server. Changes you make to the files on one computer update those files on your other devices. ownCloud makes it possible to have your latest files with you wherever you are.
+
+**Desktop System Requirements**
+ 
+   * Desktop client version 2.0 or higher.
+   * Windows 7+
+   * Mac OS X 10.7+ (64-bit only)
+   * CentOS 6 &amp; 7 (64-bit only)
+   * Debian 8.0 &amp; 9.0
+   * Fedora 25 &amp; 26 &amp; 27
+   * Ubuntu 16.04 &amp; 17.04 &amp; 17.10
+   * openSUSE Leap 42.2 &amp; 42.3
+
+Download your [ownCloud Desktop Client for MacOS, Windows, or Linux](https://owncloud.org/download/#owncloud-desktop-client.html/"Title").
+
+For installation and usage guidelines, see the [ownCloud Desktop Client Manual](https://doc.owncloud.com/desktop/latest.html/"Title").
+
+To learn what's new in version 10.0.10, configuring external storage, how files and synchronization work, and more, see the [User Manual](https://doc.owncloud.org/server/latest/user_manual/contents.html/"Title").
+
+To learn how to connect Linux, Mac OS X, Windows, and mobile devices to your ownCloud server via WebDAV, see [Accessing ownCloud Files Using WebDAV](https://doc.owncloud.org/server/latest/user_manual/files/access_webdav.html?highlight=mobile.html/"Title").
+
+You can view and manage your desktop and mobile activity in [Personal Browser and Device Settings](https://doc.owncloud.org/server/latest/user_manual/session_management.html/"Title").
+
+For updates, blogs, developer forums, and more, see [ownCloud's Newsroom](https://owncloud.com/newsroom.html/"Title").</textarea>
+
+<div id="buttonrow">
+<div style="float:left">
+Filter:&nbsp;<select name="filter" style="font-size: 11px; margin-right: 2em;">
+<option value="markdown">Markdown</option>
+<option value="smartypants">SmartyPants</option>
+<option value="both">Both</option>
+</select>
+
+Results:&nbsp;<select name="view" style="font-size: 11px; margin-right: 2em;">
+<option value="source">Source</option>
+<option value="preview">Preview</option>
+<option value="both" selected="selected">Source &amp; Preview</option>
+</select>
+</div>
+
+<input type="submit" name="convert" value="Convert" class="actionbutton">
+</div> <!--buttonrow-->
+
+</div>
+</form><p class="label">HTML Source:</p>
+<div>
+<textarea name="xhtml" rows="25" cols="80" readonly="readonly" style="font-family: Consolas, Menlo, 'Source Code Pro', 'Andale Mono', monospace; font-size: 12px;">&lt;h2&gt;---&lt;/h2&gt;
+
+&lt;h1&gt;Quickstart: Installing ownCloud and Connecting to It as a Client&lt;/h1&gt;
+
+&lt;p&gt;This Quickstart Guide describes the basic administration tasks for installing and using ownCloud, the open source file synchronization and sharing solution for servers that you control. ownCloud includes the ownCloud server, which runs on Linux, client applications for Microsoft Windows, Mac OS X and Linux, and mobile clients for the Android and Apple iOS operating systems.  &lt;/p&gt;
+
+&lt;h2&gt;Installing and Configuring an ownCloud Server&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Confirm that you meet the General Recommendations for System Requirements:   &lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;Operating system: Linux&lt;/li&gt;
+&lt;li&gt;Web server: Apache 2.4&lt;/li&gt;
+&lt;li&gt;Database: MySQL/MariaDB with InnoDB storage engine&lt;/li&gt;
+&lt;li&gt;PHP 5.6+&lt;/li&gt;
+&lt;li&gt;For the complete list of supported platforms and options, see &lt;a href="https://doc.owncloud.com/server/10.0/admin_manual/installation/system_requirements.html/" title="Title"&gt;System Requirements&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ensure you have Command Line &lt;em&gt;and&lt;/em&gt; Cron Access. To perform all administrative tasks reliably, (such as repairs, upgrades, background jobs, and long-running operations), you will need both access types.&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;For more information, see &lt;a href="https://doc.owncloud.com/server/10.0/admin_manual/installation/deployment_recommendations.html/" title="Title"&gt;Deployment Recommendations&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Install ownCloud on Linux from our &lt;a href="https://doc.owncloud.com/server/10.0/admin_manual/installation/linux_installation.html/" title="Title"&gt;Open Build Service packages&lt;/a&gt;. &lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;If there are no packages for your Linux distribution or you prefer installing from the source tarball, see &lt;a href="https://doc.owncloud.com/server/10.0/admin_manual/installation/source_installation.html/" title="Title"&gt;Manual Linux Installation&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run the Installation Wizard:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;Point your web browser to http://localhost/owncloud.&lt;/li&gt;
+&lt;li&gt;Enter your desired administrator‚Äôs username and password.&lt;/li&gt;
+&lt;li&gt;Click ‚ÄúFinish Setup‚Äù.&lt;/li&gt;
+&lt;li&gt;For more information, see &lt;a href="https://doc.owncloud.com/server/10.0/admin_manual/installation/installation_wizard.html/" title="Title"&gt;Installation Wizard&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Follow guidelines in &lt;a href="https://doc.owncloud.com/server/10.0/admin_manual/installation/configuration_notes_and_tips.html/" title="Title"&gt;Configuration Notes &amp;amp; Tips&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;ownCloud recommends the use of &lt;strong&gt;PHP 7.2&lt;/strong&gt; in new installations. Sites using a version earlier than PHP 7.2 are strongly encouraged to migrate to PHP 7.2.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Enabling Users to Connect to the ownCloud Server&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;In your config.php file, under the trusted_domains setting, add the server IP address to which users can point their browsers.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A typical configuration looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;'trusted_domains' =&amp;gt; [
+   0 =&amp;gt; 'localhost',
+   1 =&amp;gt; 'server1.example.com',
+   2 =&amp;gt; '192.168.1.50',
+],
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;In the Apache server, change the port to 8080.&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;For details, see &lt;a href="https://central.owncloud.org/t/how-to-change-the-port-owncloud-is-using/834.html/" title="Title"&gt;How to change the port ownCloud is using&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Creating a User Account&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;On the left sidebar of the User Management Page, click "users".&lt;/li&gt;
+&lt;li&gt;Enter the new user‚Äôs Login Name, their initial Password, and their email address.&lt;/li&gt;
+&lt;li&gt;Click "Create".&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; The local user creation flow now expects both a username &lt;strong&gt;and&lt;/strong&gt; an email address. Users receive email notification with an activation link which provides a more efficient, secure experience. Administrators who want to set the initial password can select the ‚ÄúSet a password for new users‚Äù option on the bottom left settings cog.&lt;/p&gt;
+
+&lt;h2&gt;Connecting to the ownCloud Server from a Desktop or Mobile Client&lt;/h2&gt;
+
+&lt;p&gt;The ownCloud Desktop Sync Client enables you to connect to &lt;em&gt;your own&lt;/em&gt; private ownCloud Server. Changes you make to the files on one computer update those files on your other devices. ownCloud makes it possible to have your latest files with you wherever you are.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Desktop System Requirements&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Desktop client version 2.0 or higher.&lt;/li&gt;
+&lt;li&gt;Windows 7+&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.7+ (64-bit only)&lt;/li&gt;
+&lt;li&gt;CentOS 6 &amp;amp; 7 (64-bit only)&lt;/li&gt;
+&lt;li&gt;Debian 8.0 &amp;amp; 9.0&lt;/li&gt;
+&lt;li&gt;Fedora 25 &amp;amp; 26 &amp;amp; 27&lt;/li&gt;
+&lt;li&gt;Ubuntu 16.04 &amp;amp; 17.04 &amp;amp; 17.10&lt;/li&gt;
+&lt;li&gt;openSUSE Leap 42.2 &amp;amp; 42.3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Download your &lt;a href="https://owncloud.org/download/#owncloud-desktop-client.html/" title="Title"&gt;ownCloud Desktop Client for MacOS, Windows, or Linux&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For installation and usage guidelines, see the &lt;a href="https://doc.owncloud.com/desktop/latest.html/" title="Title"&gt;ownCloud Desktop Client Manual&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To learn what's new in version 10.0.10, configuring external storage, how files and synchronization work, and more, see the &lt;a href="https://doc.owncloud.org/server/latest/user_manual/contents.html/" title="Title"&gt;User Manual&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To learn how to connect Linux, Mac OS X, Windows, and mobile devices to your ownCloud server via WebDAV, see &lt;a href="https://doc.owncloud.org/server/latest/user_manual/files/access_webdav.html?highlight=mobile.html/" title="Title"&gt;Accessing ownCloud Files Using WebDAV&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can view and manage your desktop and mobile activity in &lt;a href="https://doc.owncloud.org/server/latest/user_manual/session_management.html/" title="Title"&gt;Personal Browser and Device Settings&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For updates, blogs, developer forums, and more, see &lt;a href="https://owncloud.com/newsroom.html/" title="Title"&gt;ownCloud's Newsroom&lt;/a&gt;.&lt;/p&gt;
+
+</textarea>
+</div><p class="label">HTML Preview:</p>
+<div class="renderbox"><h2>---</h2>
+
+<h1>Quickstart: Installing ownCloud and Connecting to It as a Client</h1>
+
+<p>This Quickstart Guide describes the basic administration tasks for installing and using ownCloud, the open source file synchronization and sharing solution for servers that you control. ownCloud includes the ownCloud server, which runs on Linux, client applications for Microsoft Windows, Mac OS X and Linux, and mobile clients for the Android and Apple iOS operating systems.  </p>
+
+<h2>Installing and Configuring an ownCloud Server</h2>
+
+<ol>
+<li><p>Confirm that you meet the General Recommendations for System Requirements:   </p>
+
+<ul><li>Operating system: Linux</li>
+<li>Web server: Apache 2.4</li>
+<li>Database: MySQL/MariaDB with InnoDB storage engine</li>
+<li>PHP 5.6+</li>
+<li>For the complete list of supported platforms and options, see <a href="https://doc.owncloud.com/server/10.0/admin_manual/installation/system_requirements.html/" title="Title">System Requirements</a>.</li></ul></li>
+<li><p>Ensure you have Command Line <em>and</em> Cron Access. To perform all administrative tasks reliably, (such as repairs, upgrades, background jobs, and long-running operations), you will need both access types.</p>
+
+<ul><li>For more information, see <a href="https://doc.owncloud.com/server/10.0/admin_manual/installation/deployment_recommendations.html/" title="Title">Deployment Recommendations</a>.</li></ul></li>
+<li><p>Install ownCloud on Linux from our <a href="https://doc.owncloud.com/server/10.0/admin_manual/installation/linux_installation.html/" title="Title">Open Build Service packages</a>. </p>
+
+<ul><li>If there are no packages for your Linux distribution or you prefer installing from the source tarball, see <a href="https://doc.owncloud.com/server/10.0/admin_manual/installation/source_installation.html/" title="Title">Manual Linux Installation</a>.</li></ul></li>
+<li><p>Run the Installation Wizard:</p>
+
+<ul><li>Point your web browser to http://localhost/owncloud.</li>
+<li>Enter your desired administrator‚Äôs username and password.</li>
+<li>Click ‚ÄúFinish Setup‚Äù.</li>
+<li>For more information, see <a href="https://doc.owncloud.com/server/10.0/admin_manual/installation/installation_wizard.html/" title="Title">Installation Wizard</a>.</li></ul></li>
+<li><p>Follow guidelines in <a href="https://doc.owncloud.com/server/10.0/admin_manual/installation/configuration_notes_and_tips.html/" title="Title">Configuration Notes &amp; Tips</a>.</p>
+
+<ul><li>ownCloud recommends the use of <strong>PHP 7.2</strong> in new installations. Sites using a version earlier than PHP 7.2 are strongly encouraged to migrate to PHP 7.2.</li></ul></li>
+</ol>
+
+<h2>Enabling Users to Connect to the ownCloud Server</h2>
+
+<ol>
+<li>In your config.php file, under the trusted_domains setting, add the server IP address to which users can point their browsers.</li>
+</ol>
+
+<p>A typical configuration looks like this:</p>
+
+<pre><code>'trusted_domains' =&gt; [
+   0 =&gt; 'localhost',
+   1 =&gt; 'server1.example.com',
+   2 =&gt; '192.168.1.50',
+],
+</code></pre>
+
+<ol>
+<li><p>In the Apache server, change the port to 8080.</p>
+
+<ul><li>For details, see <a href="https://central.owncloud.org/t/how-to-change-the-port-owncloud-is-using/834.html/" title="Title">How to change the port ownCloud is using</a>.</li></ul></li>
+</ol>
+
+<h2>Creating a User Account</h2>
+
+<ol>
+<li>On the left sidebar of the User Management Page, click "users".</li>
+<li>Enter the new user‚Äôs Login Name, their initial Password, and their email address.</li>
+<li>Click "Create".</li>
+</ol>
+
+<p><em>Note:</em> The local user creation flow now expects both a username <strong>and</strong> an email address. Users receive email notification with an activation link which provides a more efficient, secure experience. Administrators who want to set the initial password can select the ‚ÄúSet a password for new users‚Äù option on the bottom left settings cog.</p>
+
+<h2>Connecting to the ownCloud Server from a Desktop or Mobile Client</h2>
+
+<p>The ownCloud Desktop Sync Client enables you to connect to <em>your own</em> private ownCloud Server. Changes you make to the files on one computer update those files on your other devices. ownCloud makes it possible to have your latest files with you wherever you are.</p>
+
+<p><strong>Desktop System Requirements</strong></p>
+
+<ul>
+<li>Desktop client version 2.0 or higher.</li>
+<li>Windows 7+</li>
+<li>Mac OS X 10.7+ (64-bit only)</li>
+<li>CentOS 6 &amp; 7 (64-bit only)</li>
+<li>Debian 8.0 &amp; 9.0</li>
+<li>Fedora 25 &amp; 26 &amp; 27</li>
+<li>Ubuntu 16.04 &amp; 17.04 &amp; 17.10</li>
+<li>openSUSE Leap 42.2 &amp; 42.3</li>
+</ul>
+
+<p>Download your <a href="https://owncloud.org/download/#owncloud-desktop-client.html/" title="Title">ownCloud Desktop Client for MacOS, Windows, or Linux</a>.</p>
+
+<p>For installation and usage guidelines, see the <a href="https://doc.owncloud.com/desktop/latest.html/" title="Title">ownCloud Desktop Client Manual</a>.</p>
+
+<p>To learn what's new in version 10.0.10, configuring external storage, how files and synchronization work, and more, see the <a href="https://doc.owncloud.org/server/latest/user_manual/contents.html/" title="Title">User Manual</a>.</p>
+
+<p>To learn how to connect Linux, Mac OS X, Windows, and mobile devices to your ownCloud server via WebDAV, see <a href="https://doc.owncloud.org/server/latest/user_manual/files/access_webdav.html?highlight=mobile.html/" title="Title">Accessing ownCloud Files Using WebDAV</a>.</p>
+
+<p>You can view and manage your desktop and mobile activity in <a href="https://doc.owncloud.org/server/latest/user_manual/session_management.html/" title="Title">Personal Browser and Device Settings</a>.</p>
+
+<p>For updates, blogs, developer forums, and more, see <a href="https://owncloud.com/newsroom.html/" title="Title">ownCloud's Newsroom</a>.</p>
+</div>
+<p class="footer">Markdown 1.0.2b7 / <a href="/projects/smartypants/">SmartyPants</a> 1.6.0b8<br>
+Copyright ¬© 2004‚Äì2018 John Gruber</p>
+<div style="margin: 50px 0 0 0;">
+<div id="SidebarMartini">
+<a href="https://ifixit.com/daringfireball">
+	<img alt="iFixit" src="/martini/2018/12/ifixit-1.png" height="90">
+</a>
+<p><a href="https://ifixit.com/daringfireball">iFixit</a>: The free online repair manual for everything, written by everyone.</p>
+</div>
+</div>
+
+</div> <!-- app -->
+</div> <!-- container -->
+
+<!-- Asynchronously load Mint -->
+<script type="text/javascript" src="/mint/?js" async=""></script><script type="text/javascript">
+(function () {
+	var ma = document.createElement('script');
+	ma.type = 'text/javascript';
+	ma.src = '/mint/?js';
+	ma.async = true;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ma, s);
+})();
+</script>
+
+
+
+
+
+</body></html>Ytext/htmlUUTF-8_3https://daringfireball.net/projects/markdown/dingus£’_WebResourceResponseJ/*Minted*/_text/javascriptUutf-8OAbplist00‘wxX$versionX$objectsY$archiverT$top Ü†Ø&#)*0123STUVWXYZ[\]^_`abcdefghijklmqrU$null›	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1Ä$ÄÄ	ÄÄ%ÄÄ Ä”$% '(WNS.base[NS.relativeÄ ÄÄ_ïhttps://daringfireball.net/mint/?record&key=3551716f3179665863617a537748374a4a34653578383334355231&referer=https%3A//daringfireball.net/projects/markdown/dingus&resource=https%3A//daringfireball.net/projects/markdown/dingus&resource_title=Daring%20Fireball%3A%20Markdown%20Web%20Dingus&resource_title_encoded=0&window_width=1240&window_height=646&resolution=1280x800&flash_version=0&1543854716134&serve_js“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¿⁄…ó4& »”456DRWNS.keysZNS.objects≠789:;<=>?@ABCÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄÄ≠EFGHIJKLMNOPQÄÄÄÄÄÄÄÄÄÄÄ Ä!Ä"Ä#\Content-TypeSp3pVPragma_Content-EncodingVServerWExpiresYexpect-ct]Cache-ControlTDateX__hhaa__Vcf-rayTVary]Last-Modified_text/javascript;charset=UTF-8_)CP="NOI NID ADMa OUR IND COM NAV STA LOC"Xno-cacheRbrZcloudflare_Mon, 26 Jul 1997 05:00:00 GMT_Wmax-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"_>no-store, no-cache, must-revalidate, post-check=0, pre-check=0_Mon, 03 Dec 2018 16:31:56 GMT_Ä
+
+YnBsaXN0MDDcAQIDBAUGBwgJCgsMDQ8RExUXGRsdHyEjXENvbnRlbnQtVHlwZVNwM3BWUHJhZ21hXxAQQ29udGVudC1FbmNvZGluZ1ZTZXJ2ZXJXRXhwaXJlc1lleHBlY3QtY3RdQ2FjaGUtQ29udHJvbFREYXRlVmNmLXJheVRWYXJ5XUxhc3QtTW9kaWZpZWShDl8QHXRleHQvamF2YXNjcmlwdDtjaGFyc2V0PVVURi04oRBfEClDUD0iTk9JIE5JRCBBRE1hIE9VUiBJTkQgQ09NIE5BViBTVEEgTE9DIqESWG5vLWNhY2hloRRSYnKhFlpjbG91ZGZsYXJloRhfEB1Nb24sIDI2IEp1bCAxOTk3IDA1OjAwOjAwIEdNVKEaXxBXbWF4LWFnZT02MDQ4MDAsIHJlcG9ydC11cmk9Imh0dHBzOi8vcmVwb3J0LXVyaS5jbG91ZGZsYXJlLmNvbS9jZG4tY2dpL2JlYWNvbi9leHBlY3QtY3QioRxfED5uby1zdG9yZSwgbm8tY2FjaGUsIG11c3QtcmV2YWxpZGF0ZSwgcG9zdC1jaGVjaz0wLCBwcmUtY2hlY2s9MKEeXxAdTW9uLCAwMyBEZWMgMjAxOCAxNjozMTo1NiBHTVShIF8QFDQ4Mzc2ZDI4MGI0OGJhOGEtQVRMoSJfEA9BY2NlcHQtRW5jb2RpbmehJF8QHU1vbiwgMDMgRGVjIDIwMTggMTY6MzE6NTYgR01UAAgAIQAuADIAOQBMAFMAWwBlAHMAeAB/AIQAkgCUALQAtgDiAOQA7QDvAPIA9AD/AQEBIQEjAX0BfwHAAcIB4gHkAfsB/QIPAhEAAAAAAAACAQAAAAAAAAAlAAAAAAAAAAAAAAAAAAACMQ==_48376d280b48ba8a-ATL_Accept-Encoding_Mon, 03 Dec 2018 16:31:56 GMT“+,no_NSMutableDictionary£np/\NSDictionary_text/javascript“+,st_NSHTTPURLResponse£uv/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—yz_WebResourceResponseÄ    # - 2 7 ` f Å £ ≈ » Í Ì8;>`ÇÖáâãçèëìïñòöúû•≠πªΩøX]hqwzÉåéêóü™∏∫ºæ¿¬ƒ∆» ÃŒ–“‡‚‰ÊËÍÏÓÚÙˆ¯˙¸	'.6@NS\chvñ¬ÀŒŸ˘Sî¥	8	O	a	Å	Ü	ú	†	≠	ø	ƒ	ÿ	‹		˛
+
+
+)             {              
++_ïhttps://daringfireball.net/mint/?record&key=3551716f3179665863617a537748374a4a34653578383334355231&referer=https%3A//daringfireball.net/projects/markdown/dingus&resource=https%3A//daringfireball.net/projects/markdown/dingus&resource_title=Daring%20Fireball%3A%20Markdown%20Web%20Dingus&resource_title_encoded=0&window_width=1240&window_height=646&resolution=1280x800&flash_version=0&1543854716134&serve_js‘OTâPNG
+
+   IHDR      ¥   ùBQ⁄   PLTEqª rªrº p∫    pΩ   ˇˇˇ  ˜˜˜pª∂∂∂ pπ˛˛˛˝˝˝q∫ˆˆˆ l≤n∏¯¯¯ıııÓÓÓ  PPPHHH UUU EEE nµo∂ÈÈÈ$$$ ÒÒÒ    jÆ kØo∫ k± 	˙˙˙˚˚˚h´ h≠¸¸¸˘˘˘  qΩ»»»ÙÙÙmµÚÚÚ Yî  '			p∫ \ö  " c§ l¥ p∑ 555 Vè‚‚‚  * oπ d¶ `ù .M eß 'AµµµÏÏÏ222 %>FFF‡‡‡ >>> ÌÌÌ a† f™ 
+ >e  5 2_ùÍÍÍ ^õ PÉf® c¢ /000 5W \ó 1Q ;d&&& oºsº–––KKK*** QÜ333ììì m∑qæ iØ≤≤≤ñññ   ÔÔÔ [ó Hx Al +F Sä J| Dp q∫ g©RRR =fπππ‰‰‰ŸŸŸvvv´´´çççÖÖÖööö "9ÅÅÅ )E  ?h  ÁÁÁ :`NNNIy 8[3U Gt Ai )C !8e£úúú OÇqº888ÉÉÉ 2S r∫ÂÂÂ @nCCC∑∑∑√√√ MÅ +I©©©………êêêàààooo j∞€€€ 7^h™ m≤ %VVV i¨ Tå Wç M~~~ôôôcccræ£££ L~ .III’’’ZZZØØØ¢¢¢ VëΩΩΩm≥ EtŒŒŒpΩQQQÃÃÃxxx∆∆∆ ,ßßß Er _ü\õ qπjjj%%% 6Z a¢ííí	ººº‹‹‹ ___ÀÀÀ4442X Wèåååüüü #0N™pÆﬂ  IDATx⁄Ìú|’¿ÔíΩ4^öÑ#%jÑòÿ@ã≠ù∂Â_[(V[JŸC†Z†Ÿ2EAˆƒ∏2‹{Î_≈ø˚Ôû∏˜˘ﬂ√ˇˇçªÀÕt¸ìz©y˙IπÀ›Â}ﬂoºﬂ˚Ω˜é`aÖHßÄS¿)‡p
+¯	L—\Ù†û¬ù]¬¥¡9G'¶Y ∞ËŒ¨‘hN¢Øáˇvtbï¶Ùá\á*5—·®îÙáFül≈\ßFV6Ìù≤‡¡•}ß›1|Zﬂ€Ó≤:ßº”ziˇm˚gÃZŒb±√Fx¶ˆ™±A —©Ä!MpÍ¶Y$q7C°aÓn§ﬂú“ß%0E;DEÊ(ˇ⁄kØ	<a\@#‡~,GÁ“íM¬˛WØ/	 dN¨∆∫B⁄…s	w›∞≠9∞âÄzSI	,∆Å!èÊÒÄ≠Õêÿ›…πr€° KQ…l√M[ºº®∑ÑÚØ∫ÿqK∏˘m£†”v8í:ˇ§\,]•g6*ó^∫òal‡Î5Á≥I™“†Ïæ**USVd‹H¬XﬂÛû-ON` ?*W@ÿiNlGWÿëWc>¥æ Å˝R¢Ä)6pªó'⁄U¯⁄©`\¡%Fµ åº,ú)0Ñ€ƒ-«(n®⁄πª®‰ë0ÎJ7’ÇögµCæÃπ‡√;)‡@~èJï^=ÿ$I0d;àA+Ÿlu[˝tíHÎœ@^»Ÿã√˝T"¨8!.ÿ&»ac;ò¡=6;ﬁ‰O‡‡aô¥Ì¿6ÈÔcâ»Ñ$ 8∞—ŒH¨€›	€≈ñ í ‚∏SÚÄaÅ†ïôƒM:Ì±.ùÕÀAO¨∑ÆÑ!uµ◊ÆÜ@+@ºL|bÍ¶Ïƒ˝FHCƒ *ç¡ı§^AÌÊ±¥]tÃ§n,Bsq
+Å∂ 0ç™ˇ`¯j#Uu£ˇ°òcójÁüè£jö≥û„*ù_ÇlU◊±⁄Õ=î“ØiKx—G[Ÿi±ë·CÅá"’öicÑâ&Üà>F„ˇsQîë7Ø&≠lØÈê˘ÕR–íNãU…ËıY»ﬂÙ7ÊF9ÿ854˘˝«á{umaGû⁄∫˝0…ìÑìQ´0øÌK‰ŒæÃÂCÕ-√ªÀ)MË	hí<’ÎIxo–ÈÃ˛…A°ëœ‡óñ#ëì®=§~à6G2”)ï˙»å))∞¶óF1Â˘Âó”ÒÅèΩ6 3 ∑≥‰>i˘¥ZÚéaÉ,˝E‘b˝}}›¬ \ö∆2vLù»®√©‹ﬂïNDäº(Ë˚¥y´⁄p†Øæ˜·ØÚ+”òé¡a^LrÅO~ˆT¸ïËÜπ„˘zìéä^`-‡Ω˘N]-lV]‚`#_„T∏îjö5ô˚Êbù∑Ÿá,*·√Ñ”≠æÖïÁ∆ƒXÏñâÿµ9C˚/‰î‚ßi6ßX/a¶∏¿ö¿˛æ@∫@ÍA¿◊ÔP4/Ö&¡oÎãæ™´‘(và◊¿Ì=? í¿éÛ~CØ´Â ïª-Á3aè{W»)¨oB3*é®¶ÿÊëÇA)∑$0∑'ºX?§%úwÖJ?çùÑÛfú™øÒﬂ.éΩ˝8˚Ê¯ç~V7≈≠r∫“wéÇq;<≈Ç˝0¨˚≠à¡†÷,˙Wb8®5^ì§û∞ﬂä*Ω:◊p6‰w&Át1
+•î/ÊnÆ±;gS›¸R+∆“∑‘ôŒ˜3ª©^^¡∂¿8m®ﬁ&@(öoE	_"åß¯mD¯.øâ£S(˜≥^≥ú.IÕû¡OÔª¡È°scd5Uùc—QMY8êGAB"aÖΩ?i@ÿxidæM5Û@9˙Û2ƒ≠Á•É¿≈~b∫dÖ÷39x3ˆ‹ÀÎrº1ÍÎ$¯ó#0¶r´¶ˇ∞yíËå”Ÿ◊z6‹‰%bÕ~3ïGå35PWCÍZòyô∞ns`xö'ä´MÔmû¡«\¿ê≥≠º◊kJkÉπ8∑0è5ZD	%|8dã≈K‹M‹·O`§í6 $æÿÙﬁ=ˆX÷ «#≥≠©“Ê6h≥9CõX≥e≤SΩ-Õ†Œæ–r¿ÁyE˝3õÁÆ˘èiø‰ﬂJ∆ÍìK:≠ lgÃW"ïú„ÊÊëÊÖZqÜıèúºsÕfÃ†¯Íé¢!"ez¨.ÅÎ:å¸ºÖñK≠◊Úm§πß§Lñ]â·ÙÊ–P”Ââ¿k˝›ÇÉáëº˘¥(?#∆ÇQÂ∫∂ÜçKx·È[÷¶6.í|]?·Ê@â ›ôqÑXO√æò
+„¡¥2c†∞ö,(·Õ^ì¡i˜éçÊ5LÀ‡Z”Â„Le¿Ç¿kÚÃF°ô~…x¥y^Î®ó∞Ø›„„7và#pÛ,“8ö˛QNK˙¨_´Aqroº0lº’)±"∞ØÚﬁ≠˜9#œ”HîãÊwË®ßCÍoy£ÎCÑGYò}ô'ß>nM—˘+h–ı†È~%F£&∆Vπ÷Ç¿;‰√∏·AéS%Ì Ê⁄É≈sXi«•¯@>6¿–Ô˚-	ô`‡r¯ı]:⁄?5_‡áz'Eh›hbS»`Ë:ƒYR•πIå^°Ö˚§M·ÚÜ≥¿û<74noË]ÈÄ∏„o°^˝åÅõœ›«U-Òú~Î#=Ú) 1…·¯Àip_Ø8®&QıŒ`]Døb˝#‘∆s≈eg¡aNùüµ_7œ…A3pn$3ÍE‘#ä5˘´ö≤ñı¡ÎßK∑°Ÿ“zsEˆÑ–(“fÉÙ¿?g ≠ñ-˘¬ÊKg-	åVhî π©Mπoπ‹Ì∞MKu˝Nmµ"⁄Zv´¨◊˛#'qï0®˜AŒ_©&wØï˜.ﬂ÷˘5!oÆﬂ!"è}^—XvlŒ‹5¨%Å9∏'¥¿+¿ÿ„jÂ^∆{$Çæ/?î'ê˙·¡––ºF¿˜ò*wí8R˚8æ{=‚ºöˆŸ0£…kÅÂïﬁô0RjzY0…zŸ'ÄÙù3)_ªâ-ó;òe-´“,€Ø‰;ÕN,Òyè~]l<¿G€JÛF,,‘I1≤‚°o≤l\ﬂ	G`¥&gWùõ‘ékÌã·)õõ0ë0©ﬂ¶Ö.éú.»∆˜Ω&qï0D‰%^\Ù≠z{\#œò&ÆÌN∞ÚﬂÊF≥n ” UrãY¶ƒ›ÎûWl◊ÔÖn˚é-–@·óËË®√í6 ./AmﬂFl¥±¯ŸÕqﬂ9‡»£º(‡>Ì‚eŒíuødJ¸∑¶%`wi˘4ﬁﬁn˘‚∂¬õºÿ¯ó∏£[67†Ïlª
+JÙB)Û[#… Kuæmp’}⁄•’≤w[öﬁÌˇ2∑}¨ËãÖö`Bﬁ,w`?™‰ÿ+·æ£ˆi5	=@h\ΩWüÔ Ä}Áúb¢O˚Äë√´º™Yë$±æJÉ≤7}mN≤ ñ›6âñ∫ØÜ!eÂ£	{èZ‚ﬁ‘≤∂Üø_|K+_~‡î7ª
+∞…Ãg÷…^∑ı3I-ï¿óÒ$Ú}ZÅ£œëX[…÷Ø m‘94|0À&'0I‹’∂˜Ò0ÃÄÁFìÛıR‚4ŸÊoB|ÎÜhΩ^Óã´ŸƒñÑJN•‰,|&Ã∑*ŒÏ#x'T„y*qÔóJK aR07-å¯ÜcáòLF	+J˘}√ó+:πX\LÓ\,}Û^¨f;‚Ö≠	¶Ÿ?C‰›◊N¨kÍ‰	˛≈4Z;
+ùÌBÓ∑c˚…O6…%å ’˜mñÎ˝NŒ–AX^xæxﬁëQ∑$?«u`∏+≤{ƒ“öojGŒ*))ô8rÿÔß≠ﬂt¨üë‚ÕâtÚ´¥C\ÀÅ=|În‰çÊÊ?Ùkñ4	:∫ÿp\˚ °A•È@N<∞∏XmÒPüÒ)π(™3HXÛ
+e*¿™›1MGuôÍLNÀ"%úNßÄS¿)‡p
+8úNßÄS¿)‡ˆ súvdo<ﬁoÌ˘÷‰Z~@ÎgŒ€ÃUTp˙”ñhÂ8Œ◊?ª≈˙räJGwqIwFô~)¡ÓærP„ì j\øcÙËì4Â·—ˇæ'K∫`—âüŒí+ÊsÒé&’ÏˇÓΩ/TDÊíwn¯Ò5üDªË'ï—£?ÔŸ6ı!⁄¢`Û˜•••e|%æ®[öa)}R¨È¿‡®lßTÔäù.px±œËÒÀ~ùñÊj\$.Iw¶Ø‚0Õ+=“LäÎå{'·˜·Odåìé+z’ ~dDdoG'™.o∏	=†^‚1=2‡wÙ«áŸó°ù”ÕÔR<\]2ûHp˛ΩØdó∫L⁄=„{tAœÈË(Û¨vYè‡o3wÍàbﬁ¥2L»v©BáÈKU•ô˝Pßƒã≠|íd2„2Ã*Q¯.∫‡¨ÚÈßâb˚L|B¶V∆ÀE†Q∫tu¡3È'c{Ü¯‡ÑÀH°™	å~ÒaNÙßöªÁ+Å=ß·Îπ˜JEµ,ªUı‡K¶Kwˆò/ó·¶¬¿]ãL\ts¢%ú&KX>ßá≤ÙÓ±ÓQN
+`¨öÎ$ï˛V·YNóNóΩ«JV≥g6ÆÎçJU˛Móßw:—ÌDó6-`ãEg™ Ü…¨10;.]∂ÚãÂJ.$Èj·>`xa≈Ü^?Ùe—+EHI
+OÌÖÀÜ,∂„%‹≈Ï0ªDv?]üÚ©¸3<µJÆΩXéIƒ&KÔﬁ°eÄŸI}´ﬁGƒ/êx=◊E••QÈh9=”¿gõE¿ßÖk,	‘ïy+ 3HRrœç
+Ìl0g‡ÿfŸ”ˆI"-|*{åÏü=W(cV5∞bSΩâÑπüòS|≥'˜pâ]h—#gHΩiŸJï˜1î0g	ïvµÕÜaÚPºKE]°ñë©JèÀDw`ÓÁ≥·E=Â˙˛\,`ÙÂ5Uöÿ;˝NMËemß’mü≤¸8∫K,	£õﬂ>G§y◊ˆ¶÷÷“rel√H3«+Óı<•ãíjhi˜ÅŸø(¥zg6À&≥Ñ”“z≈Ù“H≠ÔΩ|ï/…Å´*Zîòn∫Tü±6∞fòö˛ZÏn	ép∏%›ËπŸóT¿Ô<Ò´h˘‚’À}l8H›FÆ™ìß[U?EëAm9Pé˜£ZÒ
+ßä≠,aWcivôÃõ~ô‹;ïﬁúï<*›ø-¿‹¿F…ãÓÃ~[ÓùänÚ%p[bié˜±ó¡¸∆©2q·≠ædnµJÉˇ&Á7<+}A◊§K,Û+_g˛πQÍ ¯xπ”{ÀÅõ∏ŒıœûfKè9 g¢≥0ù∏◊b∞·Í™»_±/D≥∑7Yÿ’Jß/ÍæNùà\vP´≤9=Lƒˇ´%`Oò≥¨Ñ_¿wdˇUR›U>ıº˙…WGßZZê)!·*x£‘¥·„“
+≥Æ«*Ï9Ä…≤û˝’áYZm8 ˙Í¢ô≥Ò` 3N˚»ã∞Ñ/ËŸ¿O£Û»s∏˝ßC‚“—¶7¯ÆCÄ„ÁãXOÈÚ±öÏÌ>—<≤–ù„u¶⁄ß±Òupˇá´
+ªEÁHÿáH/Ú\÷À‹ñz~ëY‘ıÅÔeâˇ)”ï—˚…l#ìˇ¥±kZa„C“Ò‰pÁß˙Gü|Czi˙â…lG ≥Y◊|v“% :tu˚≠¶åÊÑûﬁ˛ïbçC≈éÈ€ód_;ye˙JGˇœ∑ﬂ9ﬂË±ìoﬁæ„l∂cÄu)ÔxºwB·æ∏ˇß.ân˚qJÉ&‚⁄O¿upóp
+8úNßÄS¿)‡p
+8NÂü«Gj‚æ    IENDÆB`ÇYimage/pngO	lbplist00‘z{X$versionX$objectsY$archiverT$top Ü†Ø'#)*0123UVWXYZ[\]^_`abcdefghijklmnopquU$null›	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1ÄÄÄ	ÄÄ&ÄÄ Ä”$% '(WNS.base[NS.relativeÄ ÄÄ_7https://daringfireball.net/martini/2018/12/ifixit-1.png“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¿⁄…óQH »”456ETWNS.keysZNS.objectsÆ789:;<=>?@ABCDÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄÄÄÆGHIJKLMNOPQRSÄÄÄÄÄÄÄÄÄÄ Ä!Ä"Ä#Ä$Ä%\Content-Type]Last-ModifiedVServerWExpires_cf-cache-statusYexpect-ct]Cache-ControlTDate^Content-LengthX__hhaa__Vcf-ray]Accept-RangesTVaryTEtagYimage/png_Fri, 30 Nov 2018 15:20:32 GMTZcloudflare_Mon, 03 Dec 2018 20:31:55 GMTSHIT_Wmax-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"_public, max-age=14400_Mon, 03 Dec 2018 16:31:55 GMTT5204_D
+
+YnBsaXN0MDDdAQIDBAUGBwgJCgsMDQ4QEhQWGBocHiAiJCZcQ29udGVudC1UeXBlVFZhcnlWU2VydmVyV0V4cGlyZXNfEA9jZi1jYWNoZS1zdGF0dXNZZXhwZWN0LWN0XUNhY2hlLUNvbnRyb2xURGF0ZV5Db250ZW50LUxlbmd0aFZjZi1yYXldQWNjZXB0LVJhbmdlc1RFdGFnXUxhc3QtTW9kaWZpZWShD1lpbWFnZS9wbmehEV8QD0FjY2VwdC1FbmNvZGluZ6ETWmNsb3VkZmxhcmWhFV8QHU1vbiwgMDMgRGVjIDIwMTggMjA6MzE6NTUgR01UoRdTSElUoRlfEFdtYXgtYWdlPTYwNDgwMCwgcmVwb3J0LXVyaT0iaHR0cHM6Ly9yZXBvcnQtdXJpLmNsb3VkZmxhcmUuY29tL2Nkbi1jZ2kvYmVhY29uL2V4cGVjdC1jdCKhG18QFXB1YmxpYywgbWF4LWFnZT0xNDQwMKEdXxAdTW9uLCAwMyBEZWMgMjAxOCAxNjozMTo1NSBHTVShH1Q1MjA0oSFfEBQ0ODM3NmQyNWE4MTliYThhLUFUTKEjVWJ5dGVzoSVfEBoiYjhlZTQtMTQ1NC01N2JlMzU3MTJhZTUwIqEnXxAdRnJpLCAzMCBOb3YgMjAxOCAxNToyMDozMiBHTVQACAAjADAANQA8AEQAVgBgAG4AcwCCAIkAlwCcAKoArAC2ALgAygDMANcA2QD5APsA/wEBAVsBXQF1AXcBlwGZAZ4BoAG3AbkBvwHBAd4B4AAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAIA_48376d25a819ba8a-ATLUbytes_Accept-Encoding_"b8ee4-1454-57be35712ae50"“+,rs_NSMutableDictionary£rt/\NSDictionary“+,vw_NSHTTPURLResponse£xy/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—|}_WebResourceResponseÄ    # - 2 7 a g Ç § ∆ … Î Ó9<?aÉÜàäåéêíîñóôõùü¶Æ∫ºæ¿˙ˇ
+%.029AL[]_acegikmoqsuwÜàäåéêíîñòöúû†¢§±ø∆Œ‡Í¯˝*/4>^iâçÁˇ$lÉâõ∏Ω”◊‰È˝#58N             ~              P_7https://daringfireball.net/martini/2018/12/ifixit-1.png’Omvar Mint = new Object();
+Mint.save = function() 
+{
+	var now		= new Date();
+	var debug	= false; // this is set by php 
+	if (window.location.hash == '#Mint:Debug') { debug = true; };
+	var path	= 'http://daringfireball.net/mint/?record&key=3551716f3179665863617a537748374a4a34653578383334355231';
+	path 		= path.replace(/^https?:/, window.location.protocol);
+	
+	// Loop through the different plug-ins to assemble the query string
+	for (var developer in this) 
+	{
+		for (var plugin in this[developer]) 
+		{
+			if (this[developer][plugin] && this[developer][plugin].onsave) 
+			{
+				path += this[developer][plugin].onsave();
+			};
+		};
+	};
+	// Slap the current time on there to prevent caching on subsequent page views in a few browsers
+	path += '&'+now.getTime();
+	
+	// Redirect to the debug page
+	if (debug) { window.open(path+'&debug&errors', 'MintLiveDebug'+now.getTime()); return; };
+	
+	var ie = /*@cc_on!@*/0;
+	if (!ie && document.getElementsByTagName && (document.createElementNS || document.createElement))
+	{
+		var tag = (document.createElementNS) ? document.createElementNS('http://www.w3.org/1999/xhtml', 'script') : document.createElement('script');
+		tag.type = 'text/javascript';
+		tag.src = path + '&serve_js';
+		document.getElementsByTagName('head')[0].appendChild(tag);
+	}
+	else if (document.write)
+	{
+		document.write('<' + 'script type="text/javascript" src="' + path + '&amp;serve_js"><' + '/script>');
+	};
+};
+if (!Mint.SI) { Mint.SI = new Object(); }
+Mint.SI.Referrer = 
+{
+	onsave	: function() 
+	{
+		var encoded = 0;
+		if (typeof Mint_SI_DocumentTitle == 'undefined') { Mint_SI_DocumentTitle = document.title; }
+		else { encoded = 1; };
+		var referer		= (window.decodeURI)?window.decodeURI(document.referrer):document.referrer;
+		var resource	= (window.decodeURI)?window.decodeURI(document.URL):document.URL;
+		return '&referer=' + escape(referer) + '&resource=' + escape(resource) + '&resource_title=' + escape(Mint_SI_DocumentTitle) + '&resource_title_encoded=' + encoded;
+	}
+};
+if (!Mint.SI) { Mint.SI = new Object(); }
+Mint.SI.RealEstate = 
+{
+	onsave	: function() 
+	{
+		var width = -1;
+		var height = -1;
+		
+		if (typeof window.innerWidth != "undefined")
+		{
+			width = window.innerWidth;
+			height = window.innerHeight;
+		}
+		else if (document.documentElement && typeof document.documentElement.offsetWidth != "undefined" && document.documentElement.offsetWidth != 0)
+		{
+			width = document.documentElement.offsetWidth;
+			height = document.documentElement.offsetHeight;
+		}
+		else if (document.body && typeof document.body.offsetWidth != "undefined")
+		{
+			width = d.body.offsetWidth;
+			height = d.body.offsetHeight;
+		};
+		
+		return '&window_width=' + width + '&window_height=' + height;
+	}
+};if (!Mint.SI) { Mint.SI = new Object(); }
+Mint.SI.UserAgent007 = 
+{
+	versionHigh			: 16,
+	flashVersion		: 0,
+	resolution			: '0x0',
+	detectFlashVersion	: function () 
+	{
+		var ua = navigator.userAgent.toLowerCase();
+		if (navigator.plugins && navigator.plugins.length) 
+		{
+			var p = navigator.plugins['Shockwave Flash'];
+			if (typeof p == 'object') 
+			{
+				for (var i=this.versionHigh; i>=3; i--) 
+				{
+					if (p.description && p.description.indexOf(' ' + i + '.') != -1) { this.flashVersion = i; break; }
+				}
+			}
+		}
+		else if (ua.indexOf("msie") != -1 && ua.indexOf("win")!=-1 && parseInt(navigator.appVersion) >= 4 && ua.indexOf("16bit")==-1) 
+		{
+			var vb = '<scr' + 'ipt language="VBScript"\> \nOn Error Resume Next \nDim obFlash \nFor i = ' + this.versionHigh + ' To 3 Step -1 \n   Set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash." & i) \n   If IsObject(obFlash) Then \n      Mint.SI.UserAgent007.flashVersion = i \n      Exit For \n   End If \nNext \n<'+'/scr' + 'ipt\> \n';
+			document.write(vb);
+		}
+		else if (ua.indexOf("webtv/2.5") != -1) this.flashVersion = 3;
+		else if (ua.indexOf("webtv") != -1) this.flashVersion = 2;
+		return this.flashVersion;
+	},
+	onsave				: function() 
+	{
+		if (this.flashVersion == this.versionHigh) { this.flashVersion = 0; };
+		this.resolution = screen.width+'x'+screen.height;
+		return '&resolution=' + this.resolution + '&flash_version=' + this.flashVersion;
+	}
+};
+Mint.SI.UserAgent007.detectFlashVersion();
+Mint.save();O	Œbplist00‘wxX$versionX$objectsY$archiverT$top Ü†Ø&#)*0123STUVWXYZ[\]^_`abcdefghijklmqrU$null›	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1Ä$ÄÄ	ÄÄ%ÄÄ Ä”$% '(WNS.base[NS.relativeÄ ÄÄ_#https://daringfireball.net/mint/?js“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¿⁄…ódR »”456DRWNS.keysZNS.objects≠789:;<=>?@ABCÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄÄ≠EFGHIJKLMNOPQÄÄÄÄÄÄÄÄÄÄÄ Ä!Ä"Ä#\Content-TypeSp3pVPragma_Content-EncodingVServerWExpiresYexpect-ct]Cache-ControlTDateX__hhaa__Vcf-rayTVary]Last-Modified_text/javascript;charset=UTF-8_)CP="NOI NID ADMa OUR IND COM NAV STA LOC"Xno-cacheRbrZcloudflare_Mon, 26 Jul 1997 05:00:00 GMT_Wmax-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"_>no-store, no-cache, must-revalidate, post-check=0, pre-check=0_Mon, 03 Dec 2018 16:31:56 GMT_Ä
+
+YnBsaXN0MDDcAQIDBAUGBwgJCgsMDQ8RExUXGRsdHyEjXENvbnRlbnQtVHlwZVNwM3BWUHJhZ21hXxAQQ29udGVudC1FbmNvZGluZ1ZTZXJ2ZXJXRXhwaXJlc1lleHBlY3QtY3RdQ2FjaGUtQ29udHJvbFREYXRlVmNmLXJheVRWYXJ5XUxhc3QtTW9kaWZpZWShDl8QHXRleHQvamF2YXNjcmlwdDtjaGFyc2V0PVVURi04oRBfEClDUD0iTk9JIE5JRCBBRE1hIE9VUiBJTkQgQ09NIE5BViBTVEEgTE9DIqESWG5vLWNhY2hloRRSYnKhFlpjbG91ZGZsYXJloRhfEB1Nb24sIDI2IEp1bCAxOTk3IDA1OjAwOjAwIEdNVKEaXxBXbWF4LWFnZT02MDQ4MDAsIHJlcG9ydC11cmk9Imh0dHBzOi8vcmVwb3J0LXVyaS5jbG91ZGZsYXJlLmNvbS9jZG4tY2dpL2JlYWNvbi9leHBlY3QtY3QioRxfED5uby1zdG9yZSwgbm8tY2FjaGUsIG11c3QtcmV2YWxpZGF0ZSwgcG9zdC1jaGVjaz0wLCBwcmUtY2hlY2s9MKEeXxAdTW9uLCAwMyBEZWMgMjAxOCAxNjozMTo1NiBHTVShIF8QFDQ4Mzc2ZDI1N2ZkNGJhOGEtQVRMoSJfEA9BY2NlcHQtRW5jb2RpbmehJF8QHU1vbiwgMDMgRGVjIDIwMTggMTY6MzE6NTUgR01UAAgAIQAuADIAOQBMAFMAWwBlAHMAeAB/AIQAkgCUALQAtgDiAOQA7QDvAPIA9AD/AQEBIQEjAX0BfwHAAcIB4gHkAfsB/QIPAhEAAAAAAAACAQAAAAAAAAAlAAAAAAAAAAAAAAAAAAACMQ==_48376d257fd4ba8a-ATL_Accept-Encoding_Mon, 03 Dec 2018 16:31:55 GMT“+,no_NSMutableDictionary£np/\NSDictionary_text/javascript“+,st_NSHTTPURLResponse£uv/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—yz_WebResourceResponseÄ    # - 2 7 ` f Å £ ≈ » Í Ì8;>`ÇÖáâãçèëìïñòöúû•≠πªΩøÂÍı˛$,7EGIKMOQSUWY[]_moqsuwy{}ÅÉÖáâñö°¥ª√Õ€‡Èı#OX[fÜ‡!A≈‹Ó)-:LQei}ãù†∂             {              ∏_#https://daringfireball.net/mint/?js    1 < S e { ô ® ©g»g“gÿhhhh3h>hPhVsõu4u=âïâüììIìT£≈≠ó                           ≠Ω
