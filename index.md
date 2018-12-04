@@ -18,18 +18,18 @@ Installing and Configuring an ownCloud Server
    * For the complete list of supported platforms and options, see [System Requirements](https://doc.owncloud.com/server/10.0/admin_manual/installation/system_requirements.html).
 
 2. Ensure you have Command Line *and* Cron Access. To perform all administrative tasks reliably, (such as repairs, upgrades, background jobs, and long-running operations), you will need both access types.
-   * For more information, see [Deployment Recommendations](https://doc.owncloud.com/server/10.0/admin_manual/installation/deployment_recommendations.html/"Title").
+   * For more information, see [Deployment Recommendations](https://doc.owncloud.com/server/10.0/admin_manual/installation/deployment_recommendations.html).
 
-3. Install ownCloud on Linux from our [Open Build Service packages](https://doc.owncloud.com/server/10.0/admin_manual/installation/linux_installation.html/"Title"). 
-   * If there are no packages for your Linux distribution or you prefer installing from the source tarball, see [Manual Linux Installation](https://doc.owncloud.com/server/10.0/admin_manual/installation/source_installation.html/"Title").
+3. Install ownCloud on Linux from our [Open Build Service packages](https://doc.owncloud.com/server/10.0/admin_manual/installation/linux_installation.html). 
+   * If there are no packages for your Linux distribution or you prefer installing from the source tarball, see [Manual Linux Installation](https://doc.owncloud.com/server/10.0/admin_manual/installation/source_installation.html).
 
 4. Run the Installation Wizard:
    * Point your web browser to http://localhost/owncloud.
    * Enter your desired administrator’s username and password.
    * Click “Finish Setup”.
-   * For more information, see [Installation Wizard](https://doc.owncloud.com/server/10.0/admin_manual/installation/installation_wizard.html/"Title").
+   * For more information, see [Installation Wizard](https://doc.owncloud.com/server/10.0/admin_manual/installation/installation_wizard.html).
 
-5. Follow guidelines in [Configuration Notes & Tips](https://doc.owncloud.com/server/10.0/admin_manual/installation/configuration_notes_and_tips.html/"Title").
+5. Follow guidelines in [Configuration Notes & Tips](https://doc.owncloud.com/server/10.0/admin_manual/installation/configuration_notes_and_tips.html).
    * ownCloud recommends the use of **PHP 7.2** in new installations. Sites using a version earlier than PHP 7.2 are strongly encouraged to migrate to PHP 7.2.
 
 
@@ -47,7 +47,7 @@ A typical configuration looks like this:
     
    * In the Apache server, change the port to 8080.
 
-   * For details, see [How to change the port ownCloud is using](https://central.owncloud.org/t/how-to-change-the-port-owncloud-is-using/834.html/"Title").
+   * For details, see [How to change the port ownCloud is using](https://central.owncloud.org/t/how-to-change-the-port-owncloud-is-using/834.html).
 
 
 Creating a User Account
@@ -74,14 +74,14 @@ The ownCloud Desktop Sync Client enables you to connect to *your own private own
    * Ubuntu 16.04 & 17.04 & 17.10
    * openSUSE Leap 42.2 & 42.3
 
-Download your [ownCloud Desktop Client for MacOS, Windows, or Linux](https://owncloud.org/download/#owncloud-desktop-client.html/"Title").
+Download your [ownCloud Desktop Client for MacOS, Windows, or Linux](https://owncloud.org/download/#owncloud-desktop-client.html).
 
-For installation and usage guidelines, see the [ownCloud Client Desktop Manual](https://doc.owncloud.org/desktop/1.8.html/"Title").
+For installation and usage guidelines, see the [ownCloud Client Desktop Manual](https://doc.owncloud.org/desktop/1.8.html).
 
-To learn what's new in version 10.0.10, how to configure external storage, how files and synchronization work, and more, see the [User Manual](https://doc.owncloud.org/server/latest/user_manual/contents.html/"Title").
+To learn what's new in version 10.0.10, how to configure external storage, how files and synchronization work, and more, see the [User Manual](https://doc.owncloud.org/server/latest/user_manual/contents.html).
 
-To learn how to connect Linux, Mac OS X, Windows, and mobile devices to your ownCloud server via WebDAV, see [Accessing ownCloud Files Using WebDAV](https://doc.owncloud.org/server/latest/user_manual/files/access_webdav.html?highlight=device%20settings.html/"Title").
+To learn how to connect Linux, Mac OS X, Windows, and mobile devices to your ownCloud server via WebDAV, see [Accessing ownCloud Files Using WebDAV](https://doc.owncloud.org/server/latest/user_manual/files/access_webdav.html?highlight=device%20settings.html).
 
-To view and manage your desktop and mobile activity, see [Manage Connected Browsers and Devices](https://doc.owncloud.org/server/10.0/user_manual/session_management.html/"Title").
+To view and manage your desktop and mobile activity, see [Manage Connected Browsers and Devices](https://doc.owncloud.org/server/10.0/user_manual/session_management.html).
 
-You are welcomed to become part of our ownCloud community. For information about support, development, events, and more, see [Community](https://owncloud.org/community/"Title").
+You are welcomed to become part of our ownCloud community. For information about support, development, events, and more, see [Community](https://owncloud.org/community).
