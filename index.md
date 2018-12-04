@@ -76,12 +76,12 @@ The ownCloud Desktop Sync Client enables you to connect to *your own private own
 
 Download your [ownCloud Desktop Client for MacOS, Windows, or Linux](https://owncloud.org/download/#owncloud-desktop-client.html/"Title").
 
-For installation and usage guidelines, see the [ownCloud Desktop Client Manual](https://doc.owncloud.com/desktop/latest.html/"Title").
+For installation and usage guidelines, see the [ownCloud Desktop Client Manual](https://doc.owncloud.org/desktop/1.8//"Title").
 
 To learn what's new in version 10.0.10, how to configure external storage, how files and synchronization work, and more, see the [User Manual](https://doc.owncloud.org/server/latest/user_manual/contents.html/"Title").
 
-To learn how to connect Linux, Mac OS X, Windows, and mobile devices to your ownCloud server via WebDAV, see [Accessing ownCloud Files Using WebDAV](https://doc.owncloud.org/server/latest/user_manual/files/access_webdav.html?highlight=mobile.html/"Title").
+To learn how to connect Linux, Mac OS X, Windows, and mobile devices to your ownCloud server via WebDAV, see [Accessing ownCloud Files Using WebDAV](https://doc.owncloud.org/server/latest/user_manual/files/access_webdav.html?highlight=device%20settings.html/"Title").
 
-To view and manage your desktop and mobile activity, see [Personal Browser and Device Settings](https://doc.owncloud.org/server/latest/user_manual/session_management.html/"Title").
+To view and manage your desktop and mobile activity, see [Manage Connected Browsers and Devices](https://doc.owncloud.org/server/10.0/user_manual/session_management.html/"Title").
 
 For updates, blogs, developer forums, and more, see [ownCloud's Newsroom](https://owncloud.com/newsroom.html/"Title").
