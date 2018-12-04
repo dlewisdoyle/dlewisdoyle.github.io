@@ -47,7 +47,7 @@ A typical configuration looks like this:
     
    * In the Apache server, change the port to 8080.
 
-   * For details, see [How to change the port ownCloud is using](https://central.owncloud.org/t/how-to-change-the-port-owncloud-is-using/834.html).
+   * For details, see [How to change the port ownCloud is using](https://central.owncloud.org/t/how-to-change-the-port-owncloud-is-using/834).
 
 
 Creating a User Account
