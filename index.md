@@ -45,7 +45,7 @@ A typical configuration looks like this:
        2 => '192.168.1.50',
     ],
     
-    * In the Apache server, change the port to 8080.
+   * In the Apache server, change the port to 8080.
 
    * For details, see [How to change the port ownCloud is using](https://central.owncloud.org/t/how-to-change-the-port-owncloud-is-using/834.html/"Title").
 
@@ -82,6 +82,6 @@ To learn what's new in version 10.0.10, how to configure external storage, how f
 
 To learn how to connect Linux, Mac OS X, Windows, and mobile devices to your ownCloud server via WebDAV, see [Accessing ownCloud Files Using WebDAV](https://doc.owncloud.org/server/latest/user_manual/files/access_webdav.html?highlight=mobile.html/"Title").
 
-You can view and manage your desktop and mobile activity in [Personal Browser and Device Settings](https://doc.owncloud.org/server/latest/user_manual/session_management.html/"Title").
+To view and manage your desktop and mobile activity, see [Personal Browser and Device Settings](https://doc.owncloud.org/server/latest/user_manual/session_management.html/"Title").
 
-For updates, blogs, developer forums, and more, see [ownCloud's Newsroom](https://owncloud.com/newsroom.html/"Title").## Welcome to GitHub Pages
+For updates, blogs, developer forums, and more, see [ownCloud's Newsroom](https://owncloud.com/newsroom.html/"Title").
