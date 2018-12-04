@@ -54,10 +54,11 @@ A typical configuration looks like this:
 Creating a User Account
 -----------------------
 1. On the left sidebar of the User Management Page, click "users".
-2. Enter the new user’s Login Name, their initial Password, and their email address.
+2. Enter the new user’s Login Name, initial Password, and email address.
 3. Click "Create".
 
-*Note:* The local user creation flow now expects both a username **and** an email address. Users receive email notification with an activation link which provides a more efficient, secure experience. Administrators who want to set the initial password can select the “Set a password for new users” option on the bottom left settings cog.
+*Note:* The local user creation flow requires both a username **and** an email address. Users receive email notification with an activation link which provides a more efficient, secure experience. Administrators who want to set the initial password can select the “Set a password for new users” option on the bottom left settings cog.
+
 
 Connecting to the ownCloud Server from a Desktop or Mobile Client
 -----------------------------------------------------------------
@@ -65,7 +66,7 @@ The ownCloud Desktop Sync Client enables you to connect to *your own* private ow
 
 **Desktop System Requirements**
  
-   * Desktop client version 2.0 or higher.
+   * Desktop client version 2.0 or higher
    * Windows 7+
    * Mac OS X 10.7+ (64-bit only)
    * CentOS 6 & 7 (64-bit only)
