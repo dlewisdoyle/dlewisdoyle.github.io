@@ -84,4 +84,4 @@ To learn how to connect Linux, Mac OS X, Windows, and mobile devices to your own
 
 To view and manage your desktop and mobile activity, see [Manage Connected Browsers and Devices](https://doc.owncloud.org/server/10.0/user_manual/session_management.html/"Title").
 
-You are welcomed to become part of our ownCloud community. For information about support, development, events, and more, see [Community](https://owncloud.org/community//"Title").
+You are welcomed to become part of our ownCloud community. For information about support, development, events, and more, see [Community](https://owncloud.org/community/"Title").
