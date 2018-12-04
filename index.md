@@ -15,7 +15,7 @@ Installing and Configuring an ownCloud Server
    * Web server: Apache 2.4
    * Database: MySQL/MariaDB with InnoDB storage engine
    * PHP 5.6+
-   * For the complete list of supported platforms and options, see [System Requirements](https://doc.owncloud.com/server/10.0/admin_manual/installation/system_requirements.html/"Title").
+   * For the complete list of supported platforms and options, see [System Requirements](https://doc.owncloud.com/server/10.0/admin_manual/installation/system_requirements.html).
 
 2. Ensure you have Command Line *and* Cron Access. To perform all administrative tasks reliably, (such as repairs, upgrades, background jobs, and long-running operations), you will need both access types.
    * For more information, see [Deployment Recommendations](https://doc.owncloud.com/server/10.0/admin_manual/installation/deployment_recommendations.html/"Title").
