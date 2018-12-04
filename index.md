@@ -35,7 +35,7 @@ Installing and Configuring an ownCloud Server
 
 Enabling Users to Connect to the ownCloud Server
 ------------------------------------------------
-1. In your config.php file, under the trusted_domains setting, add the server IP address to which users can point their browsers.
+   * In your config.php file, under the trusted_domains setting, add the server IP address to which users can point their browsers.
 
 A typical configuration looks like this:
        
@@ -45,7 +45,7 @@ A typical configuration looks like this:
        2 => '192.168.1.50',
     ],
     
-2. In the Apache server, change the port to 8080.
+    * In the Apache server, change the port to 8080.
 
    * For details, see [How to change the port ownCloud is using](https://central.owncloud.org/t/how-to-change-the-port-owncloud-is-using/834.html/"Title").
 
@@ -61,7 +61,7 @@ Creating a User Account
 
 Connecting to the ownCloud Server from a Desktop or Mobile Client
 -----------------------------------------------------------------
-The ownCloud Desktop Sync Client enables you to connect to *your own* private ownCloud Server. Changes you make to the files on one computer update those files on your other devices. ownCloud makes it possible to have your latest files with you wherever you are.
+The ownCloud Desktop Sync Client enables you to connect to *your own private ownCloud Server*. Changes you make to files on your desktop computer can be replicated to those files on your other devices. ownCloud makes it possible to have your latest files with you wherever you are.
 
 **Desktop System Requirements**
  
