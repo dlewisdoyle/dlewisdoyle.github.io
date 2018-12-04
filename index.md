@@ -29,7 +29,6 @@ Installing and Configuring an ownCloud Server
    * Click “Finish Setup”.
    * For more information, see [Installation Wizard](https://doc.owncloud.com/server/10.0/admin_manual/installation/installation_wizard.html/"Title").
 
-
 5. Follow guidelines in [Configuration Notes & Tips](https://doc.owncloud.com/server/10.0/admin_manual/installation/configuration_notes_and_tips.html/"Title").
    * ownCloud recommends the use of **PHP 7.2** in new installations. Sites using a version earlier than PHP 7.2 are strongly encouraged to migrate to PHP 7.2.
 
@@ -57,7 +56,7 @@ Creating a User Account
 2. Enter the new user’s Login Name, initial Password, and email address.
 3. Click "Create".
 
-*Note:* The local user creation flow requires both a username **and** an email address. Users receive email notification with an activation link which provides a more efficient, secure experience. Administrators who want to set the initial password can select the “Set a password for new users” option on the bottom left settings cog.
+*Note:* The local user creation flow requires both a username *and* an email address. Users receive email notification with an activation link which provides a more efficient, secure experience. Administrators who want to set the initial password can select the “Set a password for new users” option on the bottom left settings cog.
 
 
 Connecting to the ownCloud Server from a Desktop or Mobile Client
