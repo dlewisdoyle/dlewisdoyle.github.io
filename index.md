@@ -76,7 +76,7 @@ The ownCloud Desktop Sync Client enables you to connect to *your own private own
 
 Download your [ownCloud Desktop Client for MacOS, Windows, or Linux](https://owncloud.org/download/#owncloud-desktop-client.html).
 
-For installation and usage guidelines, see the [ownCloud Client Desktop Manual](https://doc.owncloud.org/desktop/latest).
+For installation and usage guidelines, see the [ownCloud Desktop Client Manual](https://doc.owncloud.org/desktop/latest).
 
 To learn what's new in version 10.0.10, how to configure external storage, how files and synchronization work, and more, see the [User Manual](https://doc.owncloud.org/server/latest/user_manual/contents.html).
 
